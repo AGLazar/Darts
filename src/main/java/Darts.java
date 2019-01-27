@@ -1,4 +1,8 @@
+
+// Branch DARTS_INITIAL
+
 // branch DARTS_FINAL
+
 public class Darts {
     enum Multyplier {
         DOUBLE, TRIPLE
@@ -9,6 +13,25 @@ public class Darts {
     boolean isFinished = false;
     int turn = 1;
     int lastTurnScore = score;
+
+
+    public int score() { //geter ->normal aparea un get in fata dar e acelasi lucru
+        return score;
+    }
+
+    public int dartsLeft() {//geter ->normal aparea un get in fata dar e acelasi lucru
+        return dartsLeft;
+    }
+
+    public boolean isFinished() {//geter ->normal aparea un get in fata dar e acelasi lucru
+        return isFinished;
+    }
+
+    public int turn() {//geter ->normal aparea un get in fata dar e acelasi lucru
+        return turn;
+    }
+
+    
 
     public void darts(int i) {
         int scoreTemp = i;
@@ -30,6 +53,7 @@ public class Darts {
         }
         scoreTemp = multiplicator * i;
         updateDartBoard(scoreTemp, m);
+
     }
 
     private void updateDartBoard(int scoreTemp, Multiplier m) {
